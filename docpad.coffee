@@ -12,7 +12,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: ""
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -55,6 +55,7 @@ docpadConfig = {
 				"/scripts/script.js"
 			]
 
+			 # =================================
 
 
 		# -----------------------------
@@ -80,7 +81,6 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
-
 
 	# =================================
 	# Collections
