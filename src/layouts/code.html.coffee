@@ -2,17 +2,15 @@
 layout: default
 ---
 
-article id: "post", class: "post", ->
+article id: "code", class: "code", ->
   h1 @document.title
-  div class: "post-content", @content
+  div class: "code-content", @content
 
   if @document.relatedDocuments and @document.relatedDocuments.length
     section id: "related", ->
-      h3 "Related Posts"
+      h2 "Other Code Guidelines"
       nav class: "linklist", ->
         ul ->
           for document in @document.relatedDocuments
             li ->
-              span document.date.toDateString()
-              text "&raquo;"
-              a href: document.url, document.title
+              span a href: document.url, document.title

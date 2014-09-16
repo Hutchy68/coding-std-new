@@ -1,49 +1,36 @@
-﻿{
-  "name": "Joomla! Coding Standards (refresh)",
-  "version": "0.12.0",
+{
+  "name": "coding-std-new",
+  "version": "1.1.0",
   "description": "Refresh of Joomla! Coding Standard gh pages.",
-  "homepage": "https://github.com/Hutchy68/coding-std-new",
-  "keywords": [
-    "docpad-skeleton",
-    "docpad",
-    "website",
-    "bootstrap",
-    "twitter bootstrap",
-    "coffeekup"
-  ],
-  "author": "Tom Hutchison (https://github.com/Hutchy68)",
-  "maintainers": [
-    "Tom Hutchison (https://github.com/Hutchy68)"
-  ],
-  "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-  ],
-  "bugs": {
-    "url": "https://github.com/coding-std-new/issues"
+  "main": "index.js",
+  "dependencies": {
+    "docpad": "^6.50.1",
+    "docpad-plugin-cleanurls": "^2.5.2",
+    "docpad-plugin-coffeekup": "^2.2.0",
+    "docpad-plugin-coffeescript": "^2.2.3",
+    "docpad-plugin-eco": "^2.0.3",
+    "docpad-plugin-ghpages": "^2.4.3",
+    "docpad-plugin-highlightjs": "^2.2.2",
+    "docpad-plugin-less": "^2.2.0",
+    "docpad-plugin-livereload": "^2.5.6",
+    "docpad-plugin-marked": "^2.1.2",
+    "docpad-plugin-partials": "^2.8.1",
+    "docpad-plugin-related": "^2.0.5",
+    "docpad-plugin-stylus": "^2.4.0",
+    "docpad-plugin-text": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hutchy68/coding-std-new.git"
+    "url": "https://Hutchy68@github.com/Hutchy68/coding-std-new.git"
   },
-  "engines": {
-    "node": "0.10",
-    "npm": "1.2"
+  "author": "Tom Hutchison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hutchy68/coding-std-new/issues"
   },
-  "dependencies": {
-    "docpad": "~6.50.0",
-    "docpad-plugin-cleanurls": "~2.5.1",
-    "docpad-plugin-coffeescript": "~2.2.2",
-    "docpad-plugin-coffeekup": "~2.2.0",
-    "docpad-plugin-eco": "~2.0.2",
-    "docpad-plugin-less": "~2.2.0",
-    "docpad-plugin-marked": "~2.1.1",
-    "docpad-plugin-partials": "~2.8.0",
-    "docpad-plugin-related": "~2.0.5",
-    "docpad-plugin-stylus": "~2.4.0",
-    "docpad-plugin-text": "~2.3.0"
-  },
-  "devDependencies": {
-    "docpad-plugin-livereload": "~2.5.2"
-  },
-  "main": "node_modules/docpad/bin/docpad-server"
+  "homepage": "https://github.com/Hutchy68/coding-std-new"
 }

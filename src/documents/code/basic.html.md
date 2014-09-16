@@ -1,8 +1,9 @@
----
+```
 title: Basic Guidelines
-layout: page
+layout: code
+tags: ['code']
 pageOrder: 1
----
+```
 
 
 This chapter outlines the basic guidelines covering files contributed to the Joomla project. The most important rule to remember when coding for the Joomla project, **if in doubt, please ask**. 

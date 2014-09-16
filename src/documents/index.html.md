@@ -1,7 +1,9 @@
----
-layout: 'default'
-title: 'Home'
----
+```
+title: Home
+layout: default
+tags: ['intro','page']
+pageOrder: 1
+```
 
 ## Introduction
 

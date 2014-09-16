@@ -1,8 +1,9 @@
----
+```
 title: Inline Code Comments
-layout: page
+layout: code
+tags: ['code']
 pageOrder: 2
----
+```
 
 This chapter covers inline code commenting in more detail. Inline comments are all comments not included in doc blocs. The goal of in line commenting is to explain code in context. Such explanation may take many different forms.
 

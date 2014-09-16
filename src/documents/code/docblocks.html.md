@@ -1,8 +1,9 @@
----
+```
 title: DocBlocks
-layout: page
+layout: code
+tags: ['code']
 pageOrder: 3
----
+```
 
 Documentation headers for PHP code in: files, classes, class properties, methods and functions, called the docblocks, follow a convention similar to JavaDoc or phpDOC.
 
@@ -31,7 +32,7 @@ Short description (optional unless the file contains more than two classes or fu
 
 Example of a DocBlock Header:
 
-```php
+``` php
 /**
  * @package     Joomla.Installation
  * @subpackage  Controller
@@ -60,7 +61,7 @@ Short description (required, unless the file contains more than two classes or f
 * @since (required, being the version of the software the class was introduced)
 
 Example of a Class file DocBlock header:
-```php
+``` php
 /**
  * Controller class to initialise the database for the Joomla Installer.
  *
@@ -80,7 +81,7 @@ Short description (required, followed by a blank line)
 
 Example of Class property DocBlock:
 
-```php
+``` php
 	/**
 	 * The generated user ID
 	 *
@@ -104,7 +105,7 @@ Function definitions must include a documentation comment in accordance with the
 * All other tags in alphabetical order, however @since is always required.
 
 Example of Method DocBlock:
-```php
+``` php
 	/**
 	 * Set a controller class suffix for a given HTTP method.
 	 *
@@ -124,7 +125,7 @@ Example of Method DocBlock:
 
 If a function definition goes over multiple lines, all lines must be indented with one tab and the closing brace must go on the same line as the last parameter.
 
-```php
+``` php
 function fooBar($param1, $param2, 
     $param3, $param4) 
 { 

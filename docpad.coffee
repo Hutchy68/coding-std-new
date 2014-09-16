@@ -42,7 +42,9 @@ docpadConfig = {
 			# Styles
 			styles: [
 				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+				"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
 				"/styles/style.css"
+				"/styles/rainbow.css"
 			]
 
 			# Scripts
@@ -91,6 +93,17 @@ docpadConfig = {
 		posts: (database) ->
 			database.findAllLive({tags:$has:'post'}, [date:-1])
 
+		intro: (database) ->
+			database.findAllLive({tags:$has:'intro'}, [pageOrder:1,title:1])
+			
+		code: (database) ->
+			database.findAllLive({tags:$has:'code'}, [pageOrder:1,title:1])
+		
+		styleguides: (database) ->
+			database.findAllLive({tags:$has:'styleguides'}, [pageOrder:1,title:1])
+		
+		appendices: (database) ->
+			database.findAllLive({tags:$has:'appendices'}, [pageOrder:1,title:1])
 
 	# =================================
 	# Plugins

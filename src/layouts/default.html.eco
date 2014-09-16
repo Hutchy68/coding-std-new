@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title><%= @getPreparedTitle() %></title>
+	<meta name="description" content="<%= @getPreparedDescription() %>" />
+	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+	<meta name="author" content="<%= @site.author or '' %>" />
+
+	<!-- Output DocPad produced meta elements -->
+	<%- @getBlock('meta').toHTML() %>
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="../icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Joomla! Coding Standards</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Coding Standards <b class="caret"></b></a>
+						<ul class="dropdown-menu">				
+							<% for document in @getCollection('code').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						</ul>
+				</ul>
+			</div><!--/.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="row">
+		<div id="main" class="container">
+			<div class="col-sm-3">
+				<div class="manual-image">
+				<img src="../images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<div class="well sidebar-nav" id="doc-menu">
+					<ul class="nav sidebar-nav">
+						<% for document in @getCollection('intro').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						<h4>Coding Standards</h4>
+						<% for document in @getCollection('code').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						<h4>Client Syntax Styleguides</h4>
+						<% for document in @getCollection('styleguides').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						<h4>Appendices</h4>
+						<% for document in @getCollection('appendices').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+					</ul>
+				</div>
+			</div>
+				
+			<div class="col-sm-9">
+				<div class="container">
+					<section id="content" class="content">
+						<%- @content %>
+					</section>
+				</div>
+			</div>	
+		</div>
+	</div>
+		<!-- Footer -->
+	<div class="row">
+		<div class="container">
+		<footer>
+			<div class="well">
+				<h4>License</h4>
+				<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+				</div>   
+			<p class="pull-left copyright">&copy; Joomla! Coding Standards <%- (new Date()).getFullYear() %> Version 1.1</p>
+			<p class="pull-right">
+				This website was last updated at <%= @site.date.toISOString() %>
+			</p>
+		</footer>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+</body>
+</html>
