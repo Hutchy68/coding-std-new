@@ -12,7 +12,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: ""
+			url: "http://hutchy68.github.io/coding-std-new"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -43,8 +43,8 @@ docpadConfig = {
 			styles: [
 				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
 				"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-				"/styles/style.css"
-				"/styles/rainbow.css"
+				"http://hutchy68.github.io/coding-std-new/styles/style.css"
+				"http://hutchy68.github.io/coding-std-new/styles/rainbow.css"
 			]
 
 			# Scripts
@@ -52,7 +52,7 @@ docpadConfig = {
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
 				"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
-				"/scripts/script.js"
+				"http://hutchy68.github.io/coding-std-new/scripts/script.js"
 			]
 
 			 # =================================
