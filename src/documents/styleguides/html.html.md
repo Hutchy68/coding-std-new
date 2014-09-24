@@ -14,7 +14,7 @@ These guidelines have been assembled following an examination of emerging practi
 4. [The BBC's Media Standards and Guidelines](http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml)
 
 
-### Doctype
+## Doctype
 
 Always use the minimal, versionless doctype.
 
@@ -22,7 +22,7 @@ Always use the minimal, versionless doctype.
 <!doctype html>
 ```
 
-### Language
+## Language
 
 Always define which language the page is written in.
 
@@ -30,7 +30,7 @@ Always define which language the page is written in.
 <html lang="en">
 ```
 
-### Encoding
+## Encoding
 Always define the character encoding. The encoding should be defined as early as possible.
 Make sure your editor uses UTF-8 as character encoding, without a byte order mark (UTF-8, no BOM).
 Do not specify the encoding of style sheets as these assume UTF-8.
@@ -42,7 +42,7 @@ Do not specify the encoding of style sheets as these assume UTF-8.
 [More on encodings and when and how to specify them can be found in Handling character encodings in HTML and CSS](http://www.w3.org/International/tutorials/tutorial-char-enc/)
 
 
-### Capitalisation
+## Capitalisation
 All html should be lowercase; element names, attributes, attribute values (unless text/CDATA), CSS selectors, properties, and property values (with the exception of strings). Additionally, there is no need to use CDATA to escape inline JavaScript, formerly a requirement to meet XML strictness in XHTML.
 
 ```html
@@ -65,7 +65,7 @@ a {
 }
 ```
 
-### Protocol
+## Protocol
 
 Omit the protocol portion (http:, https:) from URLs pointing to images and other media files, style sheets, and scripts unless they are not available over both protocols.
 
@@ -79,7 +79,7 @@ This prevents mixed content issues and results in minor file size savings.
 <link rel="stylesheet" href="http://joomla.org/css/main.css">
 ```
 
-### Elements and Attributes
+## Elements and Attributes
 
 Always include html, head, and body tags.
 
@@ -216,7 +216,7 @@ Tip: configure your editor to "show invisibles". This will allow you to eliminat
 </table>
 ```
 
-### Indentation
+## Indentation
 Don't indent inside html, body, script, or style. Indent inside head and all other elements.
 Indent by four spaces at a time. Don’t use tabs or mix tabs and spaces for indentation.
 
@@ -251,7 +251,7 @@ Indent by four spaces at a time. Don’t use tabs or mix tabs and spaces for ind
 </html>
 ```
 
-### Trailing Whitespace
+## Trailing Whitespace
 Remove trailing white spaces. Trailing white spaces are unnecessary and can complicate diffs.
 
 ```html
@@ -263,7 +263,7 @@ Remove trailing white spaces. Trailing white spaces are unnecessary and can comp
 ```
 
 
-### Entity References
+## Entity References
 Do not use entity references. There is no need to use entity references like &mdash;, &rdquo;, or &#x263a;, assuming the same encoding (UTF-8) is used for files and editors as well as among teams.
 
 The only exceptions apply to characters with special meaning in HTML (like < and &) as well as control or “invisible” characters (like no-break spaces).
@@ -275,7 +275,7 @@ The only exceptions apply to characters with special meaning in HTML (like < and
 <p>The currency symbol for the Euro is &ldquo;&eur;&rdquo;.</p>
 ```
 
-### Inline CSS
+## Inline CSS
 
 Inline CSS must be avoided. When altering states using JavaScript, use CSS to define your states, and only use onobtrusive JavaScript to alter class names whenever possible.
 ```html
@@ -288,11 +288,11 @@ Inline CSS must be avoided. When altering states using JavaScript, use CSS to de
 
 @todo more meaningful example.
 
-### Style Attributes
+## Style Attributes
 You should not use border, align, valign, or clear attributes. Avoid use of style attributes, except where using syndicated content or internal syndicating systems.
 
 
-### Semantics
+## Semantics
 Use HTML according to its purpose. For example, use heading elements for headings, p elements for paragraphs, a elements for anchors, etc.
 
 Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.
@@ -306,15 +306,16 @@ Using HTML according to its purpose is important for accessibility, reuse, and c
 
 
 
-### Markup
+## Markup
 
-#### Image Tags
+### Image Tags
 Image elements (<img>) must have an alt attribute. Height and width attributes are optional and may be omitted.
 
 
-@todo add examples from here http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml
+@todo add examples from here 
+[Semantic Markup Guidelines](http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml)
 
-### Comments
+## Comments
 @todo: comment styles in JS, CSS, HTML
 For more complex blocks of HTML, it may be useful to add a comment to the closing tag:
 ```html

@@ -1,0 +1,56 @@
+		<div class="navbar navbar-inverse nav-justified">	
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Menu <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<% for document in @getCollection('intro').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= @site.url+document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						<h4>Coding Standards</h4>
+						<% for document in @getCollection('code').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= @site.url+document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						<h4>Client Syntax Styleguides</h4>
+						<% for document in @getCollection('styleguides').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= @site.url+document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+						<h4>Appendices</h4>
+						<% for document in @getCollection('appendices').toJSON(): %>
+							<li
+								typeof="sioc:Page"
+								about="<%= document.url %>"
+								class="<%= 'active'	if @document.url is document.url %>"
+							>
+								<a href="<%= @site.url+document.url %>" property="dc:title">
+									<%= document.title %>
+								</a>
+							</li>
+						<% end %>
+					</ul>
+				</li>
+			</ul>
+		</div>

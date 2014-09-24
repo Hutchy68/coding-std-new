@@ -1,6 +1,6 @@
 ```
-title: Home
-layout: default
+title: Joomla! Coding Standards
+layout: page
 tags: ['intro','page']
 pageOrder: 1
 ```

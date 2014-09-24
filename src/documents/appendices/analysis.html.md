@@ -2,7 +2,7 @@
 title: Coding Standards Analysis
 layout: page
 tags: ['appendices']
-pageOrder: 1
+pageOrder: 2
 ```
 
 For new contributions we are going to be enforcing coding standards to ensure that the coding style in the source code is consistent. Ensuring that your code meets these standards will make the process of code contribution smoother.

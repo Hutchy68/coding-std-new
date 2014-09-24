@@ -12,7 +12,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://hutchy68.github.io/coding-std-new"
+			url: "//hutchy68.github.io/coding-std-new"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -41,18 +41,22 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+				"//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
 				"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-				"http://hutchy68.github.io/coding-std-new/styles/style.css"
-				"http://hutchy68.github.io/coding-std-new/styles/rainbow.css"
+				"//hutchy68.github.io/coding-std-new/styles/style.css"
+				"//hutchy68.github.io/coding-std-new/styles/rainbow.css"
+				"//hutchy68.github.io/coding-std-new/styles/toc.css"
 			]
 
 			# Scripts
 			scripts: [
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
-				"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-				"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
-				"http://hutchy68.github.io/coding-std-new/scripts/script.js"
+				"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+				"//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
+				"//hutchy68.github.io/coding-std-new/scripts/script.js"
+				"//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"
+				"//hutchy68.github.io/coding-std-new/scripts/tocify.js"
+				"//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"
 			]
 
 			 # =================================
@@ -106,9 +110,16 @@ docpadConfig = {
 			database.findAllLive({tags:$has:'appendices'}, [pageOrder:1,title:1])
 
 	# =================================
-	# Plugins
+	# =================================
+	# DocPad Plugins
 
-	plugins: {}
+	plugins:
+		highlightjs:
+			aliases:
+				haml: 'xml'
+				less: 'css'
+				stylus: 'css'
+				md: 'markdown'
 
 	# =================================
 	# DocPad Events
@@ -137,6 +148,24 @@ docpadConfig = {
 					res.redirect(newUrl+req.url, 301)
 				else
 					next()
+
+
+	# =================================
+	# Environments
+
+	# DocPad's default environment is the production environment
+	# The development environment, actually extends from the production environment
+
+	# The following overrides our production url in our development environment with false
+	# This allows DocPad's to use it's own calculated site URL instead, due to the falsey value
+	# This allows <%- @site.url %> in our template data to work correctly, regardless what environment we are in
+
+	environments:
+		development:
+			templateData:
+				site:
+					url: false
+
 }
 
 
