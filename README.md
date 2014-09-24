@@ -17,7 +17,7 @@ Uses Coffeekup instead of Eco and [Twitter Bootstrap 3](http://getbootstrap.com/
 	docpad run
 	```
 
-1. [Open http://localhost:9778/](http://localhost:9778/)
+1. [Open http://localhost:9778/](http://localhost:9778/) - see [Issue #1](https://github.com/Hutchy68/coding-std-new/issues/1) you will have to modify the `docpad.coffee` file before you can use localhost to view changes.
 
 1. Modifying the `src` directory changes the output to `out`
 
