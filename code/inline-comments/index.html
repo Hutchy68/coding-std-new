@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Inline Code Comments | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="code" class="code"><h1>Inline Code Comments</h1><div class="code-content"><p>This chapter covers inline code commenting in more detail. Inline comments are all comments not included in doc blocs. The goal of in line commenting is to explain code in context. Such explanation may take many different forms.</p>
+<p>Comments that are written in a readable and narrative style, especially when explaining a complex process, are encouraged. In general they should be placed close to the code explained rather than before the entire block of code.</p>
+<p>Comments should be as sentence like as possible, which is to say that they should be complete and readable, not in short hand.</p>
+<p>Comments are not a replacement for detailed doc blocks. Comments serve to explain the logic and structure of code itself rather than the use of code.</p>
+<h2 id="formatting-of-comments">Formatting of Comments</h2>
+<p>Comment blocks that introduce large sections of code and are more than 2 lines long should use <code>/* */</code> (C) style and should use <code>*</code> on each line with the same space/tab rules as doc blocks. If you need a large introduction consider whether this block should be separated into a method to reduce complexity and therefore providing a full docblock.</p>
+<p>Comments should precede the code they refer to. As a corollary, comments should not be on the same line as the code to which they refer (which puts them after the code they reference). They should be on their own lines.</p>
+<p>Don’t use a blank line between comments and the code they refer to (no space underneath a comment block).</p>
+<p>Always have a single blank line before a comment or block of comments unless the comment (or block) is at the beginning of a code structure. ( You should not have a blank line after a &#39;{&#39; line )</p>
+<p>For example in the following case there is no new line before the first comment (because it follows a &#39;{&#39; line) but we do want a new line before the second comment:</p>
+<pre class="highlight"><code class="hljs php">  <span class="hljs-keyword">while</span> (!<span class="hljs-variable">$done</span>)
+  {
+    <span class="hljs-comment">// We don't want an infinite loop here.</span>
+    <span class="hljs-variable">$done</span> = <span class="hljs-keyword">true</span>;
+  }
+
+  <span class="hljs-comment">//Now let's do something interesting.</span>
+  <span class="hljs-variable">$result</span> = somethingInteresting();
+</code></pre>
+<p>Comments should align with the code they refer to, using the same indenting as the line that follows the comment.</p>
+<p>Comments should be indented with tabs (like code, not like doc blocks).</p>
+<h2 id="content-of-comments">Content of comments</h2>
+<p>Comments should use en-GB (See below).</p>
+<p>Always have a space between // and the start of comment text.</p>
+<p>New lines should always start with an upper case letter unless The line is a continuation of a complete sentence The term is code and is case sensitive.</p>
+<p>Code that is included specifically to assure compatibility with other software (for example specific browsers or a specific version of the CMS or for backward compatibility reasons) should be clearly marked as such. If there is the intention to remove specific code at a future point, state that but do not use a deprecation tag or specify a release (this can be hard to predict).</p>
+<p>Check spelling and grammar on all comments (see below).</p>
+<p>Only end a line with a period if it is a full sentence.</p>
+<p>Rather than use docblock tags use See:, Link: and Note: for comments if appropriate.</p>
+<p>Do not use HTML in comments unless specifically related to the comment content.</p>
+<p>Do not leave commented code unless there is a clearly explained reason for doing so. In such a case, a comment saying &quot;Code intentionally commented&quot; will prevent accidental removal.</p>
+<p>Comments may include forward looking statements of how something will be extended or modified in the future, but not todos indicating that code is not complete or ready to use.</p>
+<p>Remember that humor and sarcasm are difficult to translate.</p>
+<h2 id="acronyms">Acronyms</h2>
+<p>Capitalise all letters of acronyms such as HTML, XML, SQL, GMT, and UTC. This is an exception to the general use of en-GB rules.</p>
+<h2 id="common-spelling-and-grammar-errors">Common spelling and grammar errors</h2>
+<p>There are a few common spelling and grammar errors which will require your attention to detail. Joomla contributors include many non-native speakers of en-GB which makes it understandable that there are sometimes spelling and grammar errors. At the same time, some people reading comments also are non native speakers and may even use automated translation to understand comments. This makes it very important that comments should follow proper en-GB spelling and grammar rules. Unfortunately, these can be tricky.</p>
+<p>Wikipedia provides a good summary of <a href="http://en.wikipedia.org/wiki/American_and_British_English_spelling_differences">common differences between en-US and en-GB</a>. Note that there are some instances where en-GB common usage (but not actual rules) varies slightly from en-AU and using en-AU is considered acceptable.</p>
+<h3 id="s-vs-z">S vs Z</h3>
+<p>en-GB most commonly uses <code>ise</code> where en-US would use <code>ize</code>, such as <code>normalise</code> instead of <code>normalize</code>. (Note that there are some exceptions to this rule and some differences between en-GB and en-AU in common usage.)</p>
+<p>Use of apostrophes is one of the trickier parts of English.</p>
+<h3 id="lets-versus-let-s">Lets versus let&#39;s</h3>
+<p>Lets means permits or allows to:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// This lets the user enter data</span>
+</code></pre>
+<p>Let&#39;s is a contraction for let us and means we are going to do this now:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// Let's validate the field</span>
+</code></pre>
+<h3 id="its-versus-it-s">Its versus it&#39;s</h3>
+<p>Its is the possessive form of it:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// Get its ID</span>
+</code></pre>
+<p>It&#39;s is a contraction of it is</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// It's time to save</span>
+</code></pre>
+<h3 id="correct-spelling-of-common-words">Correct Spelling of Common Words</h3>
+<p>This is the correct spelling of some commonly used words observed by Joomla.</p>
+<ul>
+<li>dependant</li>
+<li>deprecated</li>
+</ul>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

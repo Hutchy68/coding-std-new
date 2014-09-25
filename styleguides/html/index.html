@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>HTML | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="styleguides" class="styleguides"><h1>HTML</h1><div class="styleguides-content"><p>These guidelines have been assembled following an examination of emerging practices, ideas and existing styleguides, and include items from:</p>
+<ol>
+<li><a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">Google&#39;s html styleguide</a></li>
+<li><a href="http://contribute.jquery.org/style-guide/html/">JQuery&#39;s HTML Styleguide</a></li>
+<li><a href="https://github.com/necolas/idiomatic-html">Nicolas Ghallager&#39;s &quot;Principles of writing consistent, idiomatic HTML&quot;</a></li>
+<li><a href="http://csswizardry.com/2012/04/my-html-css-coding-style/">Harry Robert&#39;s &quot;My HTML/CSS coding style&quot;</a></li>
+<li><a href="http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml">The BBC&#39;s Media Standards and Guidelines</a></li>
+</ol>
+<h2 id="doctype">Doctype</h2>
+<p>Always use the minimal, versionless doctype.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+</code></pre>
+<h2 id="language">Language</h2>
+<p>Always define which language the page is written in.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"en"</span>&gt;</span>
+</code></pre>
+<h2 id="encoding">Encoding</h2>
+<p>Always define the character encoding. The encoding should be defined as early as possible.
+Make sure your editor uses UTF-8 as character encoding, without a byte order mark (UTF-8, no BOM).
+Do not specify the encoding of style sheets as these assume UTF-8.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"utf-8"</span>&gt;</span>
+</code></pre>
+<p><a href="http://www.w3.org/International/tutorials/tutorial-char-enc/">More on encodings and when and how to specify them can be found in Handling character encodings in HTML and CSS</a></p>
+<h2 id="capitalisation">Capitalisation</h2>
+<p>All html should be lowercase; element names, attributes, attribute values (unless text/CDATA), CSS selectors, properties, and property values (with the exception of strings). Additionally, there is no need to use CDATA to escape inline JavaScript, formerly a requirement to meet XML strictness in XHTML.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"joomla.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Joomla"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">A</span> <span class="hljs-attribute">HREF</span>=<span class="hljs-value">"/"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">A</span>&gt;</span>
+</code></pre>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+a {
+    color: #a3a3a3;
+}
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+a {
+    color: #A3A3A3;
+}
+</code></pre>
+<h2 id="protocol">Protocol</h2>
+<p>Omit the protocol portion (http:, https:) from URLs pointing to images and other media files, style sheets, and scripts unless they are not available over both protocols.</p>
+<p>This prevents mixed content issues and results in minor file size savings.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//joomla.org/css/main.css"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://joomla.org/css/main.css"</span>&gt;</span>
+</code></pre>
+<h2 id="elements-and-attributes">Elements and Attributes</h2>
+<p>Always include html, head, and body tags.</p>
+<h3 id="type-attributes">Type attributes</h3>
+<p>Do not use type or attributes for style sheets (unless not using CSS) and scripts (unless not using JavaScript).</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//joomla.org/css/main.css"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//joomla.org/css/main.css"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span>&gt;</span>
+</code></pre>
+<h3 id="language-attributes">Language attributes</h3>
+<p>Do not use language attributes on script tags.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//code.jquery.com/jquery-latest.js"</span>&gt;</span><span class="javascript">
+
+&lt;!-- Bad --&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//code.jquery.com/jquery-latest.js"</span> <span class="hljs-attribute">language</span>=<span class="hljs-value">"javascript"</span>&gt;</span><span class="javascript">
+</span></span></span></code></pre>
+<h3 id="attributes">Attributes</h3>
+<p>Attribute values should be quoted using double (&quot;&quot;) quotes. Optional attributes should be omitted.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//code.jquery.com/jquery-latest.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">'//code.jquery.com/jquery-latest.js'</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Use attribute/value pairs for boolean attributes</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"on"</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">"checked"</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"on"</span> <span class="hljs-attribute">checked</span>&gt;</span>
+</code></pre>
+<p>HTML attributes should be listed in an order that reflects the fact that class names are the primary interface through which CSS and JavaScript select elements.</p>
+<ol>
+<li>class</li>
+<li>id</li>
+<li>data-*</li>
+<li>Everything else<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"[some-value]"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"[some-value]"</span> <span class="hljs-attribute">data-name</span>=<span class="hljs-value">"[some-value]"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"[some-value]"</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"[some-value]"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"[some-value]"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"[some-value]"</span> <span class="hljs-attribute">data-name</span>=<span class="hljs-value">"[some-value]"</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+</li>
+</ol>
+<p>Elements with multiple attributes can have attributes arranged across multiple lines in an effort to improve readability and produce more useful diffs:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"[some-value]"</span>
+ <span class="hljs-attribute">data-action</span>=<span class="hljs-value">"[some-value]"</span>
+ <span class="hljs-attribute">data-id</span>=<span class="hljs-value">"[some-value]"</span>
+ <span class="hljs-attribute">href</span>=<span class="hljs-value">"[some-value]"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<h3 id="elements">Elements</h3>
+<p>Optional closing tags may not be omitted.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The quick brown fox jumps over the lazy dog.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The quick brown fox jumps over the lazy dog.
+</code></pre>
+<p>Self-closing (void) elements should not be closed. Trailing forward slashes and spaces should be omitted.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//images/logo.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//images/logo.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span>
+</code></pre>
+<h3 id="formatting">Formatting</h3>
+<p>Use a new line for every block, list, or table element, and indent every such child element.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>We prefer readability over file-size savings when it comes to maintaining existing files. Plenty of whitespace is encouraged. Use whitespace to visually separate groups of related markup and to improve the readability and maintainability of your HTML. Use two empty lines between larger blocks, and use a single empty line between child blocks of larger blocks. Be consistent. (If you are worried about your document&#39;s size, spaces (as well as repeated use of the same strings - for instance class names) are excellent candidates for compression. Also, you may use a markup minifier to decrease your document&#39;s file size.)</p>
+<p>Keep line-length to a sensible maximum, e.g., 80 columns.</p>
+<p>Tip: configure your editor to &quot;show invisibles&quot;. This will allow you to eliminate end of line whitespace, eliminate unintended blank line whitespace, and avoid polluting commits.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>Space<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span>, the final frontier.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">blockquote</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Moe<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Larry<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Curly<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span> <span class="hljs-attribute">scope</span>=<span class="hljs-value">"col"</span>&gt;</span>Income<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span> <span class="hljs-attribute">scope</span>=<span class="hljs-value">"col"</span>&gt;</span>Taxes<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>$ 5.00<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>$ 4.50<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre>
+<h2 id="indentation">Indentation</h2>
+<p>Don&#39;t indent inside html, body, script, or style. Indent inside head and all other elements.
+Indent by four spaces at a time. Don’t use tabs or mix tabs and spaces for indentation.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Sample Page<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/style.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
+    <span class="hljs-tag">body</span> <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">100</span>em</span></span>;
+    <span class="hljs-rule">}</span></span>
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/jquery.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    $(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+        $( <span class="hljs-string">"p"</span> ).text( $.fn.jquery );
+    });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Joomla! is awesome!<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<h2 id="trailing-whitespace">Trailing Whitespace</h2>
+<p>Remove trailing white spaces. Trailing white spaces are unnecessary and can complicate diffs.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Yes please.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>No, thank you. <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<h2 id="entity-references">Entity References</h2>
+<p>Do not use entity references. There is no need to use entity references like &mdash;, &rdquo;, or &#x263a;, assuming the same encoding (UTF-8) is used for files and editors as well as among teams.</p>
+<p>The only exceptions apply to characters with special meaning in HTML (like &lt; and &amp;) as well as control or “invisible” characters (like no-break spaces).</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The currency symbol for the Euro is “€”.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The currency symbol for the Euro is &amp;ldquo;&amp;eur;&amp;rdquo;.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<h2 id="inline-css">Inline CSS</h2>
+<p>Inline CSS must be avoided. When altering states using JavaScript, use CSS to define your states, and only use onobtrusive JavaScript to alter class names whenever possible.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"is-link-disabled"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//index.php"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//index.php"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"text-decoration: line-through;"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+<p>@todo more meaningful example.</p>
+<h2 id="style-attributes">Style Attributes</h2>
+<p>You should not use border, align, valign, or clear attributes. Avoid use of style attributes, except where using syndicated content or internal syndicating systems.</p>
+<h2 id="semantics">Semantics</h2>
+<p>Use HTML according to its purpose. For example, use heading elements for headings, p elements for paragraphs, a elements for anchors, etc.</p>
+<p>Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Good --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"subscriptions/"</span>&gt;</span>View subscriptions<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Bad --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">"goToSubscriptions();"</span>&gt;</span>View subscriptions<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h2 id="markup">Markup</h2>
+<h3 id="image-tags">Image Tags</h3>
+<p>Image elements (<img>) must have an alt attribute. Height and width attributes are optional and may be omitted.</p>
+<p>@todo add examples from here 
+<a href="http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml">Semantic Markup Guidelines</a></p>
+<h2 id="comments">Comments</h2>
+<p>@todo: comment styles in JS, CSS, HTML
+For more complex blocks of HTML, it may be useful to add a comment to the closing tag:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"parent"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"child"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /child --&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /parent --&gt;</span>
+</code></pre>
+<h3 id="mark-todos">Mark todos</h3>
+<p>Highlight todos by using the keyword TODO, eg:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- TODO: add active item class --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<h3 id="markup-validation-tools">Markup validation tools</h3>
+<p>@todo: list various testing tools:</p>
+<ul>
+<li><a href="http://validator.w3.org/nu/">http://validator.w3.org/nu/</a></li>
+<li><a href="http://csslint.net/">http://csslint.net/</a></li>
+</ul>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

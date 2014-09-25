@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>XML Files | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="code" class="code"><h1>XML Files</h1><div class="code-content"><h2 id="attributes">Attributes</h2>
+<ul>
+<li>Each attribute is on its own line.</li>
+<li>The four attributes <code>name</code>, <code>type</code>, <code>label</code> and <code>description</code> should be written in this order and at the top of the element definition.</li>
+</ul>
+<h2 id="closing-elements">Closing Elements</h2>
+<p>Elements should be closed with the closing tag on a new line.</p>
+<h2 id="exception">Exception</h2>
+<p>When the element only has few attributes, then the whole element can stay on the same line.
+A max line length of 100 characters is recommended for good reading.</p>
+<h3 id="examples">Examples</h3>
+<p>Element is <strong>empty</strong>:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">field
+</span>    <span class="hljs-attribute">name</span>=<span class="hljs-value">"abc"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span>
+    <span class="hljs-attribute">label</span>=<span class="hljs-value">"Empty Field"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"Empty field without options"</span>
+    /&gt;</span>
+</code></pre>
+<p>Element is <strong>not empty</strong>:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">field
+</span>    <span class="hljs-attribute">name</span>=<span class="hljs-value">"abc"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span>
+    <span class="hljs-attribute">label</span>=<span class="hljs-value">"Field"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"Field with options"</span>
+    &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>JYES<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"0"</span>&gt;</span>JNO<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">field</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">field
+</span>    <span class="hljs-attribute">name</span>=<span class="hljs-value">"abc"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span>
+    <span class="hljs-attribute">label</span>=<span class="hljs-value">"Field"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"Field with options"</span>
+    &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option
+</span>        <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>
+        <span class="hljs-attribute">foo</span>=<span class="hljs-value">"bar"</span>
+        &gt;</span>
+        SOMETHING_VERY_LONG
+    <span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"0"</span>&gt;</span>
+        SOMETHING_VERY_LONG
+    <span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">field</span>&gt;</span>
+</code></pre>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

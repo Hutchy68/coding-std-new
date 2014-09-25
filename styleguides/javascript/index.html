@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>JavaScript | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="styleguides" class="styleguides"><h1>JavaScript</h1><div class="styleguides-content"><h2 id="naming-conventions">Naming Conventions</h2>
+<p>Use descriptive words or terse phrases for names.</p>
+<p>Variables and Functions should be camel case, starting with a lowercase letter: <code>likeThis</code></p>
+<h3 id="variables">Variables</h3>
+<p><strong>Use names that describe what the variable is:</strong></p>
+<p><code>var element = document.getElementById(&#39;elementId&#39;);</code></p>
+<p><strong>Iterators are the exception</strong></p>
+<p>Use i for index in a loop (and subsequent letters when necessary for nested iteration).</p>
+<h3 id="functions">Functions</h3>
+<p><strong>Use names that describe what the function does:</strong></p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSomeData</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">// statements</span>
+}
+</code></pre><h3 id="reserved-words">Reserved Words</h3>
+<p>Do not use reserved words for anything other than their intended use. The list of: <a href="http://es5.github.io/#x7.6.1">Reserved Words</a></p>
+<hr>
+<h2 id="syntax-style">Syntax Style</h2>
+<h3 id="indentation">Indentation</h3>
+<ul>
+<li>Don&#39;t mix tabs and spaces.</li>
+<li>Tabs, 4 spaces</li>
+</ul>
+<h3 id="spacing">Spacing</h3>
+<ul>
+<li>No whitespace at the end of line or on blank lines.</li>
+<li>Unary special-character operators (e.g., !, ++) must not have space next to their operand.</li>
+<li>Any , and ; must not have preceding space.</li>
+<li>Any ; used as a statement terminator must be at the end of the line.</li>
+<li>Any : after a property name in an object definition must not have preceding space.</li>
+<li>The ? and : in a ternary conditional must have space on both sides.</li>
+<li>No filler spaces in empty constructs (e.g., {}, [], fn())</li>
+<li>New line at the end of each file.</li>
+</ul>
+<p><strong>Array:</strong></p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">var</span> <span class="hljs-keyword">array</span> = [ <span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span> ];
+</code></pre><p><strong>Function call:</strong></p>
+<pre class="highlight"><code class="hljs scss"><span class="hljs-function">foo( arg )</span>;
+</code></pre><p><strong>Function call with multiple arguments:</strong></p>
+<pre class="highlight"><code class="hljs scala">foo( <span class="hljs-string">'string'</span>, <span class="hljs-class"><span class="hljs-keyword">object</span> );</span>
+</code></pre><p><strong>Conditional Statements</strong></p>
+<pre class="highlight"><code class="hljs mel"><span class="hljs-keyword">if</span> ( <span class="hljs-keyword">condition</span> ) {
+    <span class="hljs-comment">// statements</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// statements</span>
+}
+</code></pre><pre class="highlight"><code class="hljs mel"><span class="hljs-keyword">while</span> ( <span class="hljs-keyword">condition</span> ) {
+    <span class="hljs-comment">// statements</span>
+}
+</code></pre><pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">for</span> ( prop <span class="hljs-keyword">in</span> <span class="hljs-keyword">object</span> ) {
+    <span class="hljs-comment">// statements</span>
+}
+</code></pre><h4 id="exceptions">Exceptions</h4>
+<p><strong>First or only argument is an object, array or callback function.</strong></p>
+<p><strong>No space before the first argument:</strong></p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">foo</span>(<span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">a</span>:<span class="hljs-value"> <span class="hljs-string">'bar'</span>,
+    b: <span class="hljs-string">'baz'</span>
+</span></span></span>});
+</code></pre><pre class="highlight"><code class="hljs javascript">foo(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">// statements</span>
+}, options ); <span class="hljs-comment">// space after options argument</span>
+</code></pre><p><strong>Function with a callback, object, or array as the last argument:</strong></p>
+<p>No space after the last argument.</p>
+<pre class="highlight"><code class="hljs javascript">foo( data, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">// statements</span>
+});
+</code></pre><h3 id="commas">Commas</h3>
+<p><strong>Place commas after:</strong></p>
+<ul>
+<li>variable declarations</li>
+<li>key/value pairs</li>
+</ul>
+<h4 id="arrays">Arrays</h4>
+<p>Do not include a trailing comma, this will add 1 to your array&#39;s length.</p>
+<p><strong>No:</strong></p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">array</span> = [ <span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span>, ];
+</code></pre><p><strong>Yes:</strong></p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">array</span> = [ <span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span> ];
+</code></pre><h3 id="semicolons">Semicolons</h3>
+<p>Use them where expected.</p>
+<p>Semicolons should be included at the end of function expressions, but not at the end of function declarations.</p>
+<p><strong>Function Expression:</strong></p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+};
+</code></pre><p><strong>Function Declaration:</strong></p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+</code></pre><h3 id="quotes">Quotes</h3>
+<p>Use &#39; instead of &quot;</p>
+<hr>
+<h2 id="variables">Variables</h2>
+<h3 id="avoid-global-variables">Avoid Global Variables</h3>
+<p><strong>No:</strong></p>
+<pre class="highlight"><code class="hljs bash">foo = <span class="hljs-string">'bar'</span>;
+</code></pre><p><strong>No: implied global</strong></p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    foo = <span class="hljs-string">'bar'</span>;
+}
+</code></pre><p><strong>Yes:</strong></p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>;
+</code></pre><h3 id="multiple-variable-declarations">Multiple Variable Declarations</h3>
+<p>Use one <code>var</code> declaration and separate each variable on a newline ending with a comma.</p>
+<p><strong>No:</strong></p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>;
+<span class="hljs-keyword">var</span> bar = <span class="hljs-string">'baz'</span>;
+<span class="hljs-keyword">var</span> baz = <span class="hljs-string">'qux'</span>;
+</code></pre><p><strong>Yes:</strong></p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>,
+    bar = <span class="hljs-string">'baz'</span>,
+    baz = <span class="hljs-string">'qux'</span>;
+</code></pre><h2 id="types">Types</h2>
+<h3 id="string">String</h3>
+<ul>
+<li>Concatenate long strings.</li>
+<li>Place space before closing quote at the end of each string.</li>
+<li>Concatenation operator at the end of each subsequent string.</li>
+</ul>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> longString = <span class="hljs-string">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '</span> +
+    <span class="hljs-string">'Sed placerat, tellus eget egestas tincidunt, lectus dui '</span> +
+    <span class="hljs-string">'sagittis massa, id mollis est tortor a enim. In hac '</span> +
+    <span class="hljs-string">'habitasse platea dictumst. Duis erat justo, tincidunt ac '</span> +
+    <span class="hljs-string">'enim iaculis, malesuada condimentum mauris. Vestibulum vel '</span> +
+    <span class="hljs-string">'cursus mauris.'</span>;
+</code></pre><h3 id="number">Number</h3>
+<p>Use <code>parseInt()</code> or <code>parseFloat()</code> instead of unary plus, for readability.</p>
+<p><strong>No:</strong></p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> count = +document.getElementById(<span class="hljs-string">'inputId'</span>).<span class="hljs-keyword">value</span>;
+</code></pre><p><strong>Yes:</strong></p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> count = parseInt(document.getElementById(<span class="hljs-string">'inputId'</span>).<span class="hljs-keyword">value</span>);
+</code></pre><h3 id="type-checks">Type Checks</h3>
+<ul>
+<li>String: <code>typeof object === &#39;string&#39;</code></li>
+<li>Number: <code>typeof object === &#39;number&#39;</code></li>
+<li>Boolean: <code>typeof object === &#39;boolean&#39;</code></li>
+<li>Object: <code>typeof object === &#39;object&#39;</code></li>
+<li>Plain Object: <code>jQuery.isPlainObject( object )</code></li>
+<li>Function: <code>jQuery.isFunction( object )</code></li>
+<li>Array: <code>jQuery.isArray( object )</code></li>
+<li>Element: <code>object.nodeType</code></li>
+<li>null: <code>object === null</code></li>
+<li>null or undefined: <code>object == null</code></li>
+</ul>
+<p><strong>Undefined:</strong></p>
+<ul>
+<li>Global Variables: <code>typeof variable === &#39;undefined&#39;</code></li>
+<li>Local Variables: <code>variable === undefined</code></li>
+<li>Properties: <code>object.prop === undefined</code></li>
+</ul>
+<h3 id="objects">Objects</h3>
+<p>Use the literal, not constructor, syntax.</p>
+<p><strong>No:</strong></p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> myObj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+</code></pre><p><strong>Yes:</strong></p>
+<pre class="highlight"><code class="hljs fix"><span class="hljs-attribute">var myObj </span>=<span class="hljs-string"> {};
+</span></code></pre><p>If an object contains more than one key/value pair or an array as a value, each key/value pair should be on its own line.</p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> myObj = {
+    foo: <span class="hljs-string">'bar'</span>,
+    bar: <span class="hljs-string">'baz'</span>,
+    baz: <span class="hljs-string">'qux'</span>
+};
+</code></pre><h3 id="arrays">Arrays</h3>
+<p>Use the literal, not constructor, syntax</p>
+<p><strong>No:</strong></p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> myArr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>();
+</code></pre><p><strong>Yes:</strong></p>
+<pre class="highlight"><code class="hljs fix"><span class="hljs-attribute">var myArr </span>=<span class="hljs-string"> [];
+</span></code></pre><p>If you don&#39;t know array length use push method. This will replace the current array.</p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">var</span> myArr = [];
+myArr.push(<span class="hljs-string">'foo'</span>);
+</code></pre><p><a name="functions"></a></p>
+<h2 id="functions">Functions</h2>
+<h3 id="chaining-method-calls">Chaining Method Calls</h3>
+<pre class="highlight"><code class="hljs mel"><span class="hljs-variable">$(</span><span class="hljs-string">'.someElement'</span>)
+    .<span class="hljs-keyword">hide</span>()
+    .delay(<span class="hljs-number">1000</span>)
+    .fadeIn();
+</code></pre><h2 id="conditional-statements">Conditional Statements</h2>
+<p>Use ternary syntax if:</p>
+<ul>
+<li>One condition</li>
+<li>Result of either evaluation is one operation. </li>
+</ul>
+<pre class="highlight"><code class="hljs applescript">joomlaRocks ? 'This <span class="hljs-keyword">is</span> <span class="hljs-constant">true</span>' : '<span class="hljs-keyword">else</span> <span class="hljs-keyword">it</span> <span class="hljs-keyword">is</span> <span class="hljs-constant">false</span>';
+</code></pre><p>Otherwise, use standard syntax:</p>
+<pre class="highlight"><code class="hljs mel"><span class="hljs-keyword">if</span> ( <span class="hljs-keyword">condition</span> ) {
+    <span class="hljs-comment">// statements</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// statements</span>
+}
+</code></pre><p><strong>Cache length in variable for performance:</strong></p>
+<pre class="highlight"><code class="hljs matlab">var <span class="hljs-built_in">i</span>,
+    <span class="hljs-built_in">j</span> = <span class="hljs-transposed_variable">myArr.</span><span class="hljs-built_in">length</span>;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-built_in">i</span> = <span class="hljs-number">0</span>; <span class="hljs-built_in">i</span> &lt; <span class="hljs-built_in">j</span>; <span class="hljs-built_in">i</span>++ ) <span class="hljs-cell">{
+    // statements
+}</span>
+</code></pre><p><strong>With more than one condition:</strong></p>
+<pre class="highlight"><code class="hljs mel"><span class="hljs-keyword">if</span> ( <span class="hljs-keyword">condition</span> &amp;&amp;
+    condition2 &amp;&amp;
+    condition3 ) {
+    <span class="hljs-comment">// statements</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// statements</span>
+}
+</code></pre><h3 id="equality">Equality</h3>
+<p>Use strict equality operator === so that type is considered in comparison. Using == can produce false positives.</p>
+<pre class="highlight"><code class="hljs bash">// evaluates <span class="hljs-literal">true</span>
+<span class="hljs-number">1</span> == <span class="hljs-string">"1"</span>
+</code></pre><pre class="highlight"><code class="hljs bash">// evaluates <span class="hljs-literal">false</span>
+<span class="hljs-number">1</span> === <span class="hljs-string">"1"</span>
+</code></pre><p><a name="blocks"></a></p>
+<h2 id="blocks-multi-line-statements">Blocks &amp; Multi-line Statements</h2>
+<p>Use curly braces on blocks that have more than one statement.</p>
+<p><strong>Block with one statement:</strong></p>
+<pre class="highlight"><code class="hljs bash"><span class="hljs-keyword">if</span> ( test ) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+</code></pre><p><strong>Block with more than one statement:</strong></p>
+<pre class="highlight"><code class="hljs cs"><span class="hljs-keyword">if</span> ( test ) {
+    <span class="hljs-keyword">var</span> foo = <span class="hljs-string">'some string'</span>;
+    <span class="hljs-keyword">return</span> foo;
+}
+</code></pre><p><a name="comments"></a></p>
+<h2 id="comments">Comments</h2>
+<p><strong>Single Line</strong></p>
+<ul>
+<li>Place above the code it refers to.</li>
+<li>A space between double forward slashes and comment text.</li>
+</ul>
+<pre class="highlight"><code class="hljs livecodeserver">// I am <span class="hljs-operator">a</span> single <span class="hljs-built_in">line</span> comment.
+</code></pre><p><strong>Multiline</strong></p>
+<ul>
+<li>Place above the code it refers to.</li>
+<li>Opening token placed on the line above first comment line, closing placed below last comment line.</li>
+<li>Each comment line begins with two astericks followed by a space.</li>
+</ul>
+<pre class="highlight"><code class="hljs mathematica">/*
+** <span class="hljs-keyword">I</span> am a multiline comment.
+** <span class="hljs-keyword">Line</span> two
+** <span class="hljs-keyword">Line</span> three
+*/
+</code></pre><hr>
+<h2 id="todo-s">TODO&#39;s</h2>
+<ul>
+<li>Switch Statements vs other methods like Objects</li>
+<li>Add jQuery examples</li>
+<li>Double check accuracy of all examples</li>
+</ul>
+<p><strong>With help from:</strong></p>
+<ul>
+<li><a href="https://contribute.jquery.org/style-guide/js">jQuery JS Style Guide</a></li>
+<li><a href="https://github.com/rwaldron/idiomatic.js">Idiomatic JS</a></li>
+</ul>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

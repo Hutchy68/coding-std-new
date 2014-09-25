@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Joomla! Coding Standards</title>
+	<link href="//hutchy68.github.io/coding-std-new/atom.xml" rel="self"/>
+	<link href="//hutchy68.github.io/coding-std-new"/>
+	<updated>2014-09-25T15:45:19.370Z</updated>
+	<id>//hutchy68.github.io/coding-std-new</id>
+	<author>
+		<name>Joomla!</name>
+		<email>your@email.com</email>
+	</author>
+
+	
+</feed>

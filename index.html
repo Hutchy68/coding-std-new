@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Joomla! Coding Standards | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="page" class="page"><h1>Joomla! Coding Standards</h1><div class="page-content"><p>Good coding standards are important in any software development project. These standards are even more important when a large, diverse and worldwide community of developers are contributing to a project. One of the things that sets good software apart from great software is not only the features or the actual function the software performs, but the quality of its source code. </p>
+<p>In order to perform in the highly competitive Open Source and proprietary software industries, source code not only needs to be beautifully designed, it also needs to be beautiful and elegant to look at. The Joomla Coding Standards Manual is to help ensure our code is the highest quality which will make it easy to read, debug, and maintain. </p>
+<h2 id="guiding-principles">Guiding Principles</h2>
+<p>Since readable code is more maintainable, the compass that guides us in achieving that goal is a set of well thought out coding standards for the different software languages that are employed in the Joomla software project. Joomla has a solid heritage of striving to support a great looking product with great looking code. </p>
+<p>This manual compiles the collective wisdom of past and present contributors to the project to form the definitive standard for coding in Joomla, whether that is for the core Joomla Framework or an extension that forms part of the stack of the Joomla CMS. This manual also serves as a lighthouse to the Joomla developer community, to safely guide developers around the pitfalls of becoming lackadaisical with respect to writing clean, beautiful code.</p>
+<p>The Joomla Coding Standards borrows heavily from the PEAR coding standard for PHP files, augmenting and diverging where it is deemed sensible to do so.</p>
+<p>There are <a href="appendices/analysis">tools available</a> to help your code conform to our standards.</p>
+<h2 id="source-code-management">Source Code Management</h2>
+<p>Before we start talking about what Joomla! code should look like, it is appropriate to look at how and where the source code is stored. All serious software projects, whether driven by an Open Source community or developed within a company for proprietary purposes will manage the source code is some sort of source or version management system. The Joomla project uses a Distributed Version Control System (DVCS) called Git hosted at <a href="http://github.com">GitHub.com</a>.</p>
+<h3 id="the-joomla-framework">The Joomla Framework</h3>
+<p>The <a href="https://github.com/joomla/joomla-framework">Joomla Framework</a> is a PHP framework that is designed to serve as a foundation for not only web applications (like a CMS) but other types of software such as command line applications. The files that form the Joomla Framework are stored in a Distributed Version Control System (DVCS) called Git hosted at github.com</p>
+<p>You can learn about how to get the Joomla Framework source code from the Git repository, <a href="https://github.com/joomla/joomla-framework">https://github.com/joomla/joomla-framework</a>.</p>
+<p>Because Git treats the concepts of file revision numbers differently than Subversion, the repository revision number is not required in files (that is, the <code>@version</code> tag is not necessary).</p>
+<h3 id="the-joomla-cms">The Joomla CMS</h3>
+<p>The <a href="https://github.com/joomla/joomla-cms">Joomla! CMS</a> is a Content Management System (CMS) which enables you to build Web sites and powerful online applications. It&#39;s a free and OpenSource software, distributed under the GNU General Public License version 2 or later. The files that form the Joomla CMS are stored in a Distributed Version Control System (DVCS) called Git hosted at github.com</p>
+<p>You can learn about how to get the Joomla CMS source code from the Git repository, <a href="https://github.com/joomla/joomla-cms">https://github.com/joomla/joomla-cms</a>.</p>
+<p>Because Git treats the concepts of file revision numbers differently than Subversion, the repository revision number is not required in files (that is, the <code>@version</code> tag is not necessary).</p>
+<h2 id="compliance-tool">Compliance Tool</h2>
+<p>The standards in this manual have been adopted across the Joomla project, including the <a href="https://github.com/joomla/joomla-framework">Joomla Framework</a>, the <a href="https://github.com/joomla/joomla-cms">Joomla! CMS</a> and any other applications maintained by the project. These standards apply to source code, tests and (where applicable) documentation.</p>
+<p>A custom Joomla sniff standard for PHP files is maintained by the Joomla project and available from the code repository. The Sniff is based on the standard outlined in this document. For more information about how code standards are enforced see the analysis appendix of the manual. For information on using the Sniff see the documentation stored in its repository.</p>
+<h2 id="contributing-to-this-manual">Contributing to this manual</h2>
+<p>If you want to contribute and improve this manual, you can find the source files at <a href="https://github.com/joomla/coding-standards/tree/gh-pages">https://github.com/joomla/coding-standards/tree/gh-pages</a>.</p>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

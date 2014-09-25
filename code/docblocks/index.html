@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>DocBlocks | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="code" class="code"><h1>DocBlocks</h1><div class="code-content"><p>Documentation headers for PHP code in: files, classes, class properties, methods and functions, called the docblocks, follow a convention similar to JavaDoc or phpDOC.</p>
+<p>These &quot;DocBlocks&quot; borrow from the PEAR standard but have some variations specific for Joomla and the Joomla projects.</p>
+<p>Whereas normal code indenting uses real tabs, all whitespace in a Docblock uses real spaces. This provides better readability in source code browsers. The minimum whitespace between any text elements, such as tags, variable types, variable names and tag descriptions, is two real spaces. Variable types and tag descriptions should be aligned according to the longest Docblock tag and type-plus-variable respectively.</p>
+<p>Code contributed to the Joomla project that will become the copyright of the project is not allowed to include @author tags. You should update the contribution log in CREDITS.php. Joomla&#39;s philosophy is that the code is written &quot;all together&quot; and there is no notion of any one person &quot;owning&quot; any section of code. The @author tags are permitted in third-party libraries that are included in the core libraries.</p>
+<p>Files included from third party sources must leave DocBlocks intact. Layout files use the same DocBlocks as other PHP files.</p>
+<h2 id="file-docblock-headers">File DocBlock Headers</h2>
+<p>The file header DocBlock consists of the following required and optional elements in the following order:
+Short description (optional unless the file contains more than two classes or functions), followed by a blank line). Long description (optional, followed by a blank line).</p>
+<ul>
+<li>@category (optional and rarely used)</li>
+<li>@package (generally optional but required when files contain only procedural code)</li>
+<li>@subpackage (optional)</li>
+<li>@author (optional but only permitted in non-Joomla source files, for example, included third-party libraries like Geshi)</li>
+<li>@copyright (required)</li>
+<li>@license (required and must be compatible with the Joomla license)</li>
+<li>@deprecated (optional)</li>
+<li>@link (optional)</li>
+<li>@see (optional)</li>
+<li>@since (generally optional but required when files contain only procedural code)</li>
+</ul>
+<p>Example of a DocBlock Header:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">/**
+ *<span class="hljs-phpdoc"> @package</span>     Joomla.Installation
+ *<span class="hljs-phpdoc"> @subpackage</span>  Controller
+ *
+ *<span class="hljs-phpdoc"> @copyright</span>   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ *<span class="hljs-phpdoc"> @license</span>     GNU General Public License version 2 or later; see LICENSE.txt
+ */</span>
+</code></pre>
+<h2 id="class-definitions">Class Definitions</h2>
+<p>Class definitions start on a new line and the opening and closing braces are also placed on new lines. Class methods must follow the guidelines for Function Definitions. Properties and methods must follow OOP standards and be declared appropriately (using public, protected, private and static as applicable).
+Class definitions, properties and methods must each be provided with a DocBlock in accordance with the following sections.</p>
+<h3 id="class-docblock-headers">Class DocBlock Headers</h3>
+<p>The class Docblock consists of the following required and optional elements in the fol-lowing order.
+Short description (required, unless the file contains more than two classes or functions), followed by a blank line). Long description (optional, followed by a blank line).</p>
+<ul>
+<li>@category (optional and rarely used)</li>
+<li>@package (required)</li>
+<li>@subpackage (optional)</li>
+<li>@author (optional but only permitted in non-Joomla source files, for example, included third-party libraries like Geshi)</li>
+<li>@copyright (optional unless different from the file Docblock)</li>
+<li>@license (optional unless different from the file Docblock)</li>
+<li>@deprecated (optional)</li>
+<li>@link (optional)</li>
+<li>@see (optional)</li>
+<li>@since (required, being the version of the software the class was introduced)</li>
+</ul>
+<p>Example of a Class file DocBlock header:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">/**
+ * Controller class to initialise the database for the Joomla Installer.
+ *
+ *<span class="hljs-phpdoc"> @package</span>     Joomla.Installation
+ *<span class="hljs-phpdoc"> @subpackage</span>  Controller
+ *<span class="hljs-phpdoc"> @since</span>       3.1
+ */</span>
+</code></pre>
+<h3 id="class-property-docblocks">Class Property DocBlocks</h3>
+<p>The class property Docblock consists of the following required and optional elements in the following order.
+Short description (required, followed by a blank line)</p>
+<ul>
+<li>@var (required, followed by the property type)</li>
+<li>@deprecated (optional)</li>
+<li>@since (required)</li>
+</ul>
+<p>Example of Class property DocBlock:</p>
+<pre class="highlight"><code class="hljs php">    <span class="hljs-comment">/**
+     * The generated user ID
+     *
+     *<span class="hljs-phpdoc"> @var</span>    integer
+     *<span class="hljs-phpdoc"> @since</span>  3.1
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">static</span> <span class="hljs-variable">$userId</span> = <span class="hljs-number">0</span>;
+</code></pre>
+<h3 id="class-method-docblocks-and-functions-docblocks">Class Method DocBlocks and Functions DocBlocks</h3>
+<p>Function definitions start on a new line and the opening and closing braces are also placed on new lines. An empty line should precede lines specifying the return value.</p>
+<p>Function definitions must include a documentation comment in accordance with the Commenting section of this document.</p>
+<ul>
+<li>Short description (required, followed by a blank line)</li>
+<li>Long description (optional, followed by a blank line)</li>
+<li>@param (required if there are method or function arguments, the last @param tag is followed by a blank line)</li>
+<li>@return (required, followed by a blank line)</li>
+<li>All other tags in alphabetical order, however @since is always required.</li>
+</ul>
+<p>Example of Method DocBlock:</p>
+<pre class="highlight"><code class="hljs php">    <span class="hljs-comment">/**
+     * Set a controller class suffix for a given HTTP method.
+     *
+     *<span class="hljs-phpdoc"> @package</span> Joomla.Framework
+     *<span class="hljs-phpdoc"> @subpackage</span> Router 
+     *
+     *
+     *<span class="hljs-phpdoc"> @param</span>   string  $method  The HTTP method for which to set the class suffix.
+     *<span class="hljs-phpdoc"> @param</span>   string  $suffix  The class suffix to use when fetching the controller name for a given request.
+     *
+     *<span class="hljs-phpdoc"> @return</span>  Router  Returns itself to support chaining.
+     *
+     *<span class="hljs-phpdoc"> @since</span>   1.0
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHttpMethodSuffix</span><span class="hljs-params">(<span class="hljs-variable">$method</span>, <span class="hljs-variable">$suffix</span>)</span>
+</span></code></pre>
+<p>If a function definition goes over multiple lines, all lines must be indented with one tab and the closing brace must go on the same line as the last parameter.</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fooBar</span><span class="hljs-params">(<span class="hljs-variable">$param1</span>, <span class="hljs-variable">$param2</span>, 
+    <span class="hljs-variable">$param3</span>, <span class="hljs-variable">$param4</span>)</span> 
+{</span> 
+    <span class="hljs-comment">// Body of method. </span>
+}
+</code></pre>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

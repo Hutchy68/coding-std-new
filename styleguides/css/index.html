@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>CSS | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="styleguides" class="styleguides"><h1>CSS</h1><div class="styleguides-content"><p>These guidelines have been assembled following an examination of emerging practices, ideas and existing styleguides, namely:</p>
+<ol>
+<li><a href="https://github.com/stubbornella/oocss-code-standards">OOCSS Code Standards</a></li>
+<li><a href="https://github.com/nternetinspired/OneWeb/blob/master/STYLEGUIDE.md">Oneweb Style Guide</a></li>
+<li><a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a></li>
+</ol>
+<h2 id="commenting">Commenting</h2>
+<h3 id="major-sections">Major sections</h3>
+<p>Major code sections should be named in caps and within a full comment block, eg:</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* ==========================================================================
+   PRIMARY NAVIGATION
+   ========================================================================== */</span>
+</code></pre>
+<h3 id="sub-sections">Sub sections</h3>
+<p>Subsections should be normally cased and within an open comment block.</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Mobile navigation
+   ========================================================================== */</span>
+</code></pre>
+<h3 id="verbose-comments">Verbose comments</h3>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/**
+ * Short description using Doxygen-style comment format
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ *
+ * @tag This is a tag named 'tag'
+ *
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */</span>
+</code></pre>
+<h3 id="basic-comments">Basic comments</h3>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Basic comment */</span>
+</code></pre>
+<h3 id="uncompiled-less-scss-comments">Uncompiled LESS/Scss comments</h3>
+<pre class="highlight"><code class="hljs undefined">// These are stripped on compile.
+</code></pre>
+<h2 id="class-naming">Class naming</h2>
+<p>Use dashes to create compound class names:</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Good - use dashes */</span>
+<span class="hljs-class">.compound-class-name</span> <span class="hljs-rules">{<span class="hljs-rule">…}</span></span>
+
+<span class="hljs-comment">/* Bad - uses underscores */</span>
+<span class="hljs-class">.compound_class_name</span> <span class="hljs-rules">{<span class="hljs-rule">…}</span></span>
+
+<span class="hljs-comment">/* Bad - uses camelCase */</span>
+<span class="hljs-class">.compoundClassName</span> <span class="hljs-rules">{<span class="hljs-rule">…}</span></span>
+
+<span class="hljs-comment">/* Bad - does not use seperators */</span>
+<span class="hljs-class">.compoundclassname</span> <span class="hljs-rules">{<span class="hljs-rule">…}</span></span>
+</code></pre>
+<h3 id="indentation">Indentation</h3>
+<p>Rules should be indented one tab (equal to 4 spaces):</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Good */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#000</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">visibility</span>:<span class="hljs-value"> hidden</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad - all on one line */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#000</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">visibility</span>:<span class="hljs-value"> hidden</span></span>;<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>LESS/Scss should also be nested , with child selectors and rules indented again. Nested rules should also be spaced by one line:</p>
+<pre class="highlight"><code class="hljs undefined">/* Good */
+.example {
+
+  &gt; li {
+    float: none;
+
+    + li {
+        margin-top: 2px;
+        margin-left: 0;
+    }
+
+  }
+
+}
+/* Bad - nested rules not indented */
+.example {
+
+    &gt; li {
+    float: none;
+
+    + li {
+    margin-top: 2px;
+    margin-left: 0;
+    }
+
+    }
+
+}
+/* Bad - nested rules not spaced */
+.example {
+  &gt; li {
+    float: none;
+    + li {
+        margin-top: 2px;
+        margin-left: 0;
+    }
+  }
+}
+</code></pre>
+<h3 id="alignment">Alignment</h3>
+<p>The opening brace must be on the same line as the last selector and preceded by a space. The closing brace must be on its own line after the last property and be indented to the same level as the opening brace.</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Good */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad - closing brace is in the wrong place */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+    <span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad - opening brace missing space */</span>
+<span class="hljs-class">.example</span><span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<h3 id="property-format">Property Format</h3>
+<p>Each property must be on its own line and indented one level. There should be no space before the colon and one space after. All properties must end with a semicolon.</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Good */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad - missing spaces after colons */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value">black</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"><span class="hljs-hexcolor">#fff</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad - missing last semicolon */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span>
+</span></span></span>}
+</code></pre>
+<h3 id="hex-values">HEX values</h3>
+<p>HEX values must be declared in lowercase and shorthand:</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Good */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#eee</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#EEEEEE</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<h3 id="attribute-selectors">Attribute selectors</h3>
+<p>Always use double quotes around attribute selectors.</p>
+<pre class="highlight"><code class="hljs undefined">/* Good */
+input[type="button"] {
+    ...
+}
+
+/* Bad - missing quotes */
+input[type=button] {
+    ...
+}
+
+/* Bad - using single quote */
+input[type='button'] {
+    ...
+}
+</code></pre>
+<h3 id="zero-value-units">Zero value units</h3>
+<p>Zero values should not carry units.</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* Good */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+   <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* Bad - uses units */</span>
+<span class="hljs-class">.example</span> <span class="hljs-rules">{
+   <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span>px</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>

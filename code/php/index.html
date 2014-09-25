@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>PHP Code | Joomla! Coding Standards</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Joomla!" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.69.1" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="//hutchy68.github.io/coding-std-new/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//hutchy68.github.io/coding-std-new/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/style.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/rainbow.css" /><link  rel="stylesheet" href="//hutchy68.github.io/coding-std-new/styles/toc.css" />
+	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+				<div class="manual-image hidden-md hidden-lg">
+				<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
+				</div>
+				<a class="navbar-brand hidden-xs hidden-sm" href="//hutchy68.github.io/coding-std-new">Joomla! Coding Standards Manual</a>
+				<a class="navbar-brand hidden-md hidden-lg" href="//hutchy68.github.io/coding-std-new">Coding Standards</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Our Standards <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/code/basic"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/basic" property="dc:title">
+								Basic Guidelines
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/inline-comments"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/inline-comments" property="dc:title">
+								Inline Code Comments
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/docblocks"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/docblocks" property="dc:title">
+								DocBlocks
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/php"
+							class="active"
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/php" property="dc:title">
+								PHP Code
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/code/xml"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/code/xml" property="dc:title">
+								XML Files
+							</a>
+						</li>
+					
+					</ul>
+				<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Client Styleguides <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/html"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/html" property="dc:title">
+								HTML
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/css"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/css" property="dc:title">
+								CSS
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/styleguides/javascript"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/styleguides/javascript" property="dc:title">
+								JavaScript
+							</a>
+						</li>
+					
+					</ul>
+								<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle" id="code">Appendices <b class="caret"></b></a>
+					<ul class="dropdown-menu">				
+						
+						<li
+							typeof="sioc:Page"
+							about="/appendices/source-code-management"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/source-code-management" property="dc:title">
+								Source Code Management
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/analysis"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/analysis" property="dc:title">
+								Coding Standards Analysis
+							</a>
+						</li>
+					
+						<li
+							typeof="sioc:Page"
+							about="/appendices/examples"
+							class=""
+						>
+							<a href="//hutchy68.github.io/coding-std-new/appendices/examples" property="dc:title">
+								Code Examples
+							</a>
+						</li>
+					
+					</ul>
+			</ul>
+		</div><!--/.navbar-collapse -->
+	</div>
+</div>
+	<!-- Content -->
+	<div id="main" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
+	<div class="manual-image-lg">
+		<img src="//hutchy68.github.io/coding-std-new/images/joomla_coding_standards_manual_lg.png?raw=true" alt="Joomla! Graphic">
+	</div>
+	<h3>Table of Contents</h3>
+	<div id="toc" class="tocify"></div>
+</div>
+			</div>
+		<div class="col-md-9">
+			<section id="content" class="content">
+				<article id="code" class="code"><h1>PHP Code</h1><div class="code-content"><h2 id="language-constructs">Language Constructs</h2>
+<h3 id="php-code-tags">PHP Code Tags</h3>
+<p>Always use the full <code>&lt;?php ?&gt;</code> to delimit PHP code, not the <code>&lt;? ?&gt;</code> shorthand. This is the most portable way to include PHP code on differing operating systems and setups.</p>
+<p>For files that contain only PHP code, the closing tag (<code>?&gt;</code>) should not be included. It is not required by PHP. Leaving this out prevents trailing white space from being accidentally injected into the output that can introduce errors in the Joomla session (see the PHP manual on <a href="http://php.net/basic-syntax.instruction-separation">Instruction separation</a>).</p>
+<p>Files should always end with a blank new line.</p>
+<h3 id="general">General</h3>
+<p>Pursuant to PSR-2 <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md#25-keywords-and-truefalsenull">Keywords and True/False/Null</a></p>
+<blockquote>
+<p>PHP <a href="http://php.net/manual/en/reserved.keywords.php">keywords</a> MUST be in lower case.
+The PHP constants <code>true</code>, <code>false</code>, and <code>null</code> MUST be in lower case.</p>
+</blockquote>
+<h3 id="including-code">Including Code</h3>
+<p>Anywhere you are unconditionally including a file, use <code>require_once</code>. Anywhere you are conditionally including a file (for example, factory methods), use <code>include_once</code>. Either of these will ensure that files are included only once. They share the same file list, so you don&#39;t need to worry about mixing them. A file included with <code>require_once</code> will not be included again by <code>include_once</code>.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p><code>include_once</code> and <code>require_once</code> are PHP language statements, not functions. The correct formatting is:</p>
+<p><code>require_once JPATH_COMPONENT . ’/helpers/helper.php’;</code></p>
+</blockquote>
+<p>You should not enclose the filename in parentheses.</p>
+<h3 id="e_strict-compatible-php-code">E_STRICT Compatible PHP Code</h3>
+<p>As of Joomla version 1.6 and for all versions of the Joomla Platform, adhering to object oriented programming practice as supported by PHP 5.3+ is required. Joomla is committed to progressively making the source code E_STRICT.</p>
+<h2 id="global-variables">Global Variables</h2>
+<p>Usage of global variables should be kept to a minimum. Use OOP and factory patterns instead.</p>
+<h2 id="control-structures">Control Structures</h2>
+<p>For all control structures there is a space between the keyword and an opening parenthesis, then no space either after the opening parenthesis or before the closing bracket. This is done to distinguish control keywords from function names. All control structures must contain their logic within braces.</p>
+<p>For all all control structures, such as <code>if</code>, <code>else</code>, <code>do</code>, <code>for</code>, <code>foreach</code>, <code>try</code>, <code>catch</code>, <code>switch</code> and <code>while</code>, both the keyword starts a newline and the opening and closing braces are each put on a new line.</p>
+<h3 id="an-_if-else_-example">An <em>if-else</em> Example</h3>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">if</span> (<span class="hljs-variable">$test</span>)
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">'True'</span>;
+}
+
+<span class="hljs-comment">// Comments can go here.</span>
+<span class="hljs-comment">// Note that "elseif" as one word is used.</span>
+
+<span class="hljs-keyword">elseif</span> (<span class="hljs-variable">$test</span> === <span class="hljs-keyword">false</span>)
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">'Really false'</span>;
+}
+<span class="hljs-keyword">else</span>
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">'A white lie'</span>;
+}
+</code></pre>
+<p>If a control structure goes over multiple lines, all lines must be indented with one tab and the closing brace must go on the same line as the last parameter.</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">if</span> (<span class="hljs-variable">$test1</span>
+    &amp;&amp; <span class="hljs-variable">$test2</span>)
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">'True'</span>;
+}
+</code></pre>
+<h3 id="a-_do-while_-example">A <em>do-while</em> Example</h3>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">do</span>
+{
+    <span class="hljs-variable">$i</span>++;
+}
+<span class="hljs-keyword">while</span> (<span class="hljs-variable">$i</span> &lt; <span class="hljs-number">10</span>);
+</code></pre>
+<h3 id="a-_for_-example">A <em>for</em> Example</h3>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = <span class="hljs-number">0</span>; <span class="hljs-variable">$i</span> &lt; <span class="hljs-variable">$n</span>; <span class="hljs-variable">$i</span>++)
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">'Increment = '</span> . <span class="hljs-variable">$i</span>;
+}
+</code></pre>
+<h3 id="a-_foreach_-example">A <em>foreach</em> Example</h3>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">foreach</span> (<span class="hljs-variable">$rows</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$index</span> =&gt; <span class="hljs-variable">$row</span>)
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">'Index = '</span> . <span class="hljs-variable">$id</span> . <span class="hljs-string">', Value = '</span> . <span class="hljs-variable">$row</span>;
+}
+</code></pre>
+<h3 id="a-_while_-example">A <em>while</em> Example</h3>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">while</span> (!<span class="hljs-variable">$done</span>)
+{
+    <span class="hljs-variable">$done</span> = <span class="hljs-keyword">true</span>;
+}
+</code></pre>
+<h3 id="a-_switch_-example">A <em>switch</em> example</h3>
+<p>When using a <code>switch</code> statement, the <code>case</code> keywords are indented. The <code>break</code> statement starts on a newline assuming the indent of the code within the case.</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-keyword">switch</span> (<span class="hljs-variable">$value</span>)
+{
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'a'</span>:
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">'A'</span>;
+        <span class="hljs-keyword">break</span>;
+
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">'I give up'</span>;
+        <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+<h2 id="references">References</h2>
+<p>When using references, there should be a space before the reference operator and no space between it and the function or variable name.</p>
+<p>For example:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-variable">$ref1</span> = &amp;<span class="hljs-variable">$this</span>-&gt;sql;
+</code></pre>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>In PHP 5, reference operators are not required for objects. All objects are handled by reference.</p>
+</blockquote>
+<h2 id="concatenation-spacing">Concatenation Spacing</h2>
+<p>There should always be a space before and after the concatenation operator (&#39;.&#39;). For example:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-variable">$id</span> = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">echo</span> JRoute(<span class="hljs-string">'index.php?option=com_foo&amp;task=foo.edit&amp;id='</span> . (int) <span class="hljs-variable">$id</span>);
+</code></pre>
+<p>If the concatenation operator is the first or last character on a line, both spaces are not required. For example:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-variable">$id</span> = <span class="hljs-number">1</span>
+<span class="hljs-keyword">echo</span> JRoute::_(
+    <span class="hljs-string">'index.php?option=com_foo&amp;task=foo.edit&amp;id='</span> . (int) <span class="hljs-variable">$id</span>
+    . <span class="hljs-string">'&amp;layout=special'</span>
+);
+</code></pre>
+<h2 id="arrays">Arrays</h2>
+<p>Assignments (the <code>=&gt;</code> operator) in arrays may be aligned with tabs. When splitting array definitions onto several lines, the last value may also have a trailing comma. This is valid PHP syntax and helps to keep code diffs minimal.</p>
+<p>For example:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-variable">$options</span> = <span class="hljs-keyword">array</span>(
+    <span class="hljs-string">'foo'</span>    =&gt; <span class="hljs-string">'foo'</span>,
+    <span class="hljs-string">'spam'</span>    =&gt; <span class="hljs-string">'spam'</span>,
+);
+</code></pre>
+<h2 id="code-commenting">Code Commenting</h2>
+<p>Inline comments to explain code follow the convention for C (<code>/* … */</code>) and C++ single line (<code>// ...</code>) comments. C-style blocks are generally restricted to documentation headers for files, classes and functions. The C++ style is generally used for making code notes. Code notes are strongly encouraged to help other people, including your future-self, follow the purpose of the code. Always provide notes where the code is performing particularly complex operations.</p>
+<p>Perl/shell style comments (<code>#</code>) are not permitted in PHP files.</p>
+<p>Blocks of code may, of course, be commented out for debugging purposes using any appropriate format, but should be removed before submitting patches for contribution back to the core code.</p>
+<p>For example, do not include feature submissions like:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// Must fix this code up one day.</span>
+<span class="hljs-comment">//$code = broken($fixme);</span>
+</code></pre>
+<p>More details on inline code comments can be found in the chapter on <a href="coding-standards/chapters/inline-comments.md">Inline Code Comments</a>.</p>
+<h3 id="comment-docblocks">Comment Docblocks</h3>
+<p>Documentation headers for PHP and Javascript code in files, classes, class properties, methods and functions, called the docblocks, follow a convention similar to JavaDoc or phpDOC.</p>
+<p>These &quot;DocBlocks&quot; borrow from the PEAR standard but have some variations specific for Joomla and the Joomla Platform.</p>
+<p>Whereas normal code indenting uses real tabs, all whitespace in a Docblock uses real spaces. This provides better readability in source code browsers. The minimum whitespace between any text elements, such as tags, variable types, variable names and tag descriptions, is two real spaces. Variable types and tag descriptions should be aligned according to the longest Docblock tag and type-plus-variable respectively.</p>
+<p>If the <code>@package</code> tag is used, it will be &quot;Joomla.Platform&quot;.</p>
+<p>If the <code>@subpackage</code> tag is used, it is the name of the top level folder under the /joomla/ folder. For example: Application, Database, Html, and so on.</p>
+<p>Code contributed to the Joomla project that will become the copyright of the project is not allowed to include @author tags. You should update the contribution log in CREDITS.php. Joomla&#39;s philosophy is that the code is written &quot;all together&quot; and there is no notion of any one person &quot;owning&quot; any section of code. The <code>@author</code> tags are permitted in third-party libraries that are included in the core libraries.</p>
+<p>Files included from third party sources must leave DocBlocks intact. Layout files use the same DocBlocks as other PHP files.</p>
+<h3 id="file-docblock-headers">File DocBlock Headers</h3>
+<p>The file header DocBlock consists of the following required and optiona elements in the following order:</p>
+<ul>
+<li>Short description (optional unless the file contains more than two classes or functions), followed by a blank line).</li>
+<li>Long description (optional, followed by a blank line).</li>
+<li><code>@category</code> (optional and rarely used)</li>
+<li><code>@package</code> (generally optional but required when files contain only procedural code)</li>
+<li><code>@subpackage</code> (optional)</li>
+<li><code>@author</code> (optional but only permitted in non-Joomla source files, for example, included third-party libraries like Geshi)</li>
+<li><code>@copyright</code> (required)</li>
+<li><code>@license</code> (required and must be compatible with the Joomla license)</li>
+<li><code>@deprecated</code> (optional)</li>
+<li><code>@link</code> (optional)</li>
+<li><code>@see</code> (optional)</li>
+<li><code>@since</code> (generally optional but required when files contain only procedural code)</li>
+</ul>
+<pre class="highlight"><code class="hljs java"><span class="hljs-javadoc">/**
+ *<span class="hljs-javadoctag"> @package</span>     Joomla.Platform
+ *<span class="hljs-javadoctag"> @subpackage</span>  Database
+ *<span class="hljs-javadoctag"> @copyright</span>   Copyright 2005 - 2010 Open Source Matters. All rights re-served.
+ *<span class="hljs-javadoctag"> @license</span>     GNU General Public License version 2 or later; see LICENSE.txt
+ */</span>
+</code></pre><h2 id="function-calls">Function Calls</h2>
+<p>Functions should be called with no spaces between the function name and the opening parenthesis, and no space between this and the first parameter; a space after the comma between each parameter (if they are present), and no space between the last parameter and the closing parenthesis. There should be space before and exactly one space after the equals sign. Tab alignment over multiple lines is permitted.</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// An isolated function call.</span>
+<span class="hljs-variable">$foo</span> = bar(<span class="hljs-variable">$var1</span>, <span class="hljs-variable">$var2</span>);
+
+<span class="hljs-comment">// Multiple aligned function calls.</span>
+<span class="hljs-variable">$short</span>  = bar(<span class="hljs-string">'short'</span>);
+<span class="hljs-variable">$medium</span> = bar(<span class="hljs-string">'medium'</span>);
+<span class="hljs-variable">$long</span>   = bar(<span class="hljs-string">'long'</span>);
+</code></pre>
+<h2 id="function-definitions">Function Definitions</h2>
+<p>Function definitions start on a new line and the opening and closing braces are also placed on new lines. An empty line should precede lines specifying the return value.</p>
+<p>Function definitions must include a documentation comment in accordance with the Commenting section of this document.</p>
+<ul>
+<li>Short description (required, followed by a blank line)</li>
+<li>Long description (optional, followed by a blank line)</li>
+<li><code>@param</code> (required if there are method or function arguments, the last <code>@param</code> tag is followed by a blank line)</li>
+<li><code>@return</code> (required, followed by a blank line)</li>
+<li>All other tags in alphabetical order, however @since is always required.</li>
+</ul>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">/**
+ * A utility class.
+ *
+ *<span class="hljs-phpdoc"> @package</span>     Joomla.Platform
+ *<span class="hljs-phpdoc"> @subpackage</span>  XBase
+ *
+ *<span class="hljs-phpdoc"> @param</span>       string  $path  The library path in dot notation.
+ *
+ *<span class="hljs-phpdoc"> @return</span>      void
+ *
+ *<span class="hljs-phpdoc"> @since</span>       1.6
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jimport</span><span class="hljs-params">(<span class="hljs-variable">$path</span>)</span>
+{</span>
+    <span class="hljs-comment">// Body of method.</span>
+}
+</code></pre>
+<p>If a function definition goes over multiple lines, all lines must be indented with one tab and the closing brace must go on the same line as the last parameter.</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fooBar</span><span class="hljs-params">(<span class="hljs-variable">$param1</span>, <span class="hljs-variable">$param2</span>,
+    <span class="hljs-variable">$param3</span>, <span class="hljs-variable">$param4</span>)</span>
+{</span>
+    <span class="hljs-comment">// Body of method.</span>
+}
+</code></pre>
+<h2 id="class-definitions">Class Definitions</h2>
+<p>Class definitions start on a new line and the opening and closing braces are also placed on new lines. Class methods must follow the guidelines for Function Definitions. Properties and methods must follow OOP standards and be declared appropriately (using public, protected, private and static as applicable).</p>
+<p>Class definitions, properties and methods must each be provided with a DocBlock in accordance with the following sections.</p>
+<h3 id="class-docblock-headers">Class DocBlock Headers</h3>
+<p>The class Docblock consists of the following required and optional elements in the fol-lowing order.</p>
+<ul>
+<li>Short description (required, unless the file contains more than two classes or functions), followed by a blank line).</li>
+<li>Long description (optional, followed by a blank line).</li>
+<li><code>@category</code> (optional and rarely used)</li>
+<li><code>@package</code> (required)</li>
+<li><code>@subpackage</code> (optional)</li>
+<li><code>@author</code> (optional but only permitted in non-Joomla source files, for example, included third-party libraries like Geshi)</li>
+<li><code>@copyright</code> (optional unless different from the file Docblock)</li>
+<li><code>@license</code> (optional unless different from the file Docblock)</li>
+<li><code>@deprecated</code> (optional)</li>
+<li><code>@link</code> (optional)</li>
+<li><code>@see</code> (optional)</li>
+<li><code>@since</code> (required, being the version of the software the class was introduced)</li>
+</ul>
+<h3 id="class-property-docblocks">Class Property DocBlocks</h3>
+<p>The class property Docblock consists of the following required and optional elements in the following order.</p>
+<ul>
+<li>Short description (required, followed by a blank line)</li>
+<li><code>@var</code> (required, followed by the property type)</li>
+<li><code>@deprecated</code> (optional)</li>
+<li><code>@since</code> (required)</li>
+</ul>
+<h3 id="class-method-docblocks">Class Method DocBlocks</h3>
+<p>The DocBlock for class methods follows the same convention as for PHP functions (see above).</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">/**
+ * A utility class.
+ *
+ *<span class="hljs-phpdoc"> @package</span>     Joomla.Platform
+ *<span class="hljs-phpdoc"> @subpackage</span>  XBase
+ *<span class="hljs-phpdoc"> @since</span>       1.6
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JClass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">JObject</span>
+{</span>
+    <span class="hljs-comment">/**
+     * Human readable name
+     *
+     *<span class="hljs-phpdoc"> @var</span>    string
+     *<span class="hljs-phpdoc"> @since</span>  1.6
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-variable">$name</span>;
+
+    <span class="hljs-comment">/**
+     * Method to get the name of the class.
+     *
+     *<span class="hljs-phpdoc"> @param</span>   string  $case  Optionally return in upper/lower case.
+     *
+     *<span class="hljs-phpdoc"> @return</span>  boolean  True if successfully loaded, false otherwise.
+     *
+     *<span class="hljs-phpdoc"> @since</span>   1.6
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-variable">$case</span> = null)</span>
+    {</span>
+        <span class="hljs-comment">// Body of method.</span>
+
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">$this</span>-&gt;name;
+    }
+}
+</code></pre>
+<h2 id="naming-conventions">Naming Conventions</h2>
+<h3 id="classes">Classes</h3>
+<p>Classes should be given descriptive names. Avoid using abbreviations where possible. Class names should always begin with an uppercase letter and be written in CamelCase even if using traditionally uppercase acronyms (such as XML, HTML). One exception is for Joomla Platform classes which must begin with an uppercase &#39;J&#39; with the next letter also being uppercase.</p>
+<p>For example:</p>
+<ul>
+<li>JHtmlHelper</li>
+<li>JXmlParser</li>
+<li>JModel</li>
+</ul>
+<h3 id="functions-and-methods">Functions and Methods</h3>
+<p>Functions and methods should be named using the &quot;studly caps&quot; style (also referred to as &quot;bumpy case&quot; or &quot;camel caps&quot;). The initial letter of the name is lowercase, and each letter that starts a new &quot;word&quot; is capitalized. Function in the Joomla framework must begin with a lowercase &#39;j&#39;.</p>
+<p>For example:</p>
+<ul>
+<li>connect();</li>
+<li>getData();</li>
+<li>buildSomeWidget();</li>
+<li>jImport();</li>
+<li>jDoSomething();</li>
+</ul>
+<p>Private class members (meaning class members that are intended to be used only from within the same class in which they are declared) are preceded by a single underscore. Properties are to be written in underscore format (that is, logical words separated by underscores) and should be all lowercase.</p>
+<p>For example:</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JFooHelper</span>
+{</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-variable">$field_name</span> = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-variable">$_status</span> = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sort</span><span class="hljs-params">()</span>
+    {</span>
+    }
+}
+</code></pre>
+<h3 id="constants">Constants</h3>
+<p>Constants should always be all-uppercase, with underscores to separate words. Prefix constant names with the uppercase name of the class/package they are used in. For example, the constants used by the <code>JError</code> class all begin with <code>JERROR_</code>.</p>
+<h3 id="global-variables">Global Variables</h3>
+<p>Do not use global variables. Use static class properties or constants instead of globals.</p>
+<h3 id="regular-variables-and-class-properties">Regular Variables and Class Properties</h3>
+<p>Regular variables, follow the same conventions as function.</p>
+<p>Class variables should be set to null or some other appropriate default value.</p>
+<h2 id="exception-handling">Exception Handling</h2>
+<p>Exceptions should be used for error handling.</p>
+<p>The follow sections outline how to semantically use <a href="http://php.net/manual/en/spl.exceptions.php">SPL exceptions</a>.</p>
+<h3 id="logic-exceptions">Logic Exceptions</h3>
+<p>The LogicException is thrown when there is an explicit problem with the way the API is being used. For example, if a dependency has failed (you try to operate on an object that has not been loaded yet).</p>
+<p>The following child classes can also be used in appropriate situations:</p>
+<h4 id="badfunctioncallexception">BadFunctionCallException</h4>
+<p>This exception can be thrown if a callback refers to an undefined function or if some arguments are missing. For example if <code>is_callable()</code>, or similar, fails on a function.</p>
+<h4 id="badmethodcallexception">BadMethodCallException</h4>
+<p>This exception can be thrown if a callback refers to an undefined method or if some arguments are missing. For example <code>is_callable()</code>, or similar, fails on a class method.  Another example might be if arguments passed to a magic call method are missing.</p>
+<h4 id="invalidargumentexception">InvalidArgumentException</h4>
+<p>This exception can be thrown if there is invalid input.</p>
+<h4 id="domainexception">DomainException</h4>
+<p>This exception is similar to the InvalidArgumentException but can be thrown if a value does not adhere to a defined valid data domain. For example trying to load a database driver of type &quot;mongodb&quot; but that driver is not available in the API.</p>
+<h4 id="lengthexception">LengthException</h4>
+<p>This exception can be thrown is a length check on an argument fails. For example a file signature was not a specific number of characters.</p>
+<h4 id="outofrangeexception">OutOfRangeException</h4>
+<p>This exception has few practical applications but can be thrown when an illegal index was requested.</p>
+<h3 id="runtime-exceptions">Runtime Exceptions</h3>
+<p>The RuntimeException is thrown when some sort of external entity or environment causes a problem that is beyond your control providing the input is valid. This exception is the default case for when the cause of an error can&#39;t explicitly be determined. For example you tried to connect to a database but the database was not available (server down, etc).  Another example might be if an SQL query failed.</p>
+<h4 id="unexpectedvalueexception">UnexpectedValueException</h4>
+<p>This type of exception should be used when an unexpected result is encountered. For example a function call returned a string when a boolean was expected.</p>
+<h4 id="outofboundsexception">OutOfBoundsException</h4>
+<p>This exception has few practical applications but may be thrown if a value is not a valid key.</p>
+<h4 id="overflowexception">OverflowException</h4>
+<p>This exception has few practical applications but may be thrown when you add an element into a full container.</p>
+<h4 id="rangeexception">RangeException</h4>
+<p>This exception has few practical applications but may be thrown to indicate range errors during program execution. Normally this means there was an arithmetic error other than under/overflow. This is the runtime version of DomainException.</p>
+<h4 id="underflowexception">UnderflowException</h4>
+<p>This exception has few practical applications but may thrown when you try to remove an element of an empty container.</p>
+<h3 id="documenting-exceptions">Documenting exceptions</h3>
+<p>Each function or method must annotate the type of exception that it throws using an @throws tag and any downstream exceptions types that are thrown. Each type of exception need only be annotated once. No description is necessary.</p>
+<h2 id="sql-queries">SQL Queries</h2>
+<p>SQL keywords are to be written in uppercase, while all other identifiers (with the exception of quoted text obviously) is to be in lowercase.</p>
+<p>All table names should use the <code>#__</code> prefix rather than <code>jos_</code> to access Joomla content and allow for the user defined database prefix to be applied. Queries should also use the JDatabaseQuery API.</p>
+<pre class="highlight"><code class="hljs php"><span class="hljs-comment">// Get the database connector.</span>
+<span class="hljs-variable">$db</span> = JFactory::getDBO();
+
+<span class="hljs-comment">// Get the query from the database connector.</span>
+<span class="hljs-variable">$query</span> = <span class="hljs-variable">$db</span>-&gt;getQuery(<span class="hljs-keyword">true</span>);
+
+<span class="hljs-comment">// Build the query programatically (using chaining if desired).</span>
+<span class="hljs-variable">$query</span>-&gt;select(<span class="hljs-string">'u.*'</span>)
+    <span class="hljs-comment">// Use the qn alias for the quoteName method to quote table names.</span>
+    -&gt;from(<span class="hljs-variable">$db</span>-&gt;qn(<span class="hljs-string">'#__users'</span>) . <span class="hljs-string">' AS u'</span>));
+
+<span class="hljs-comment">// Tell the database connector what query to run.</span>
+<span class="hljs-variable">$db</span>-&gt;setQuery(<span class="hljs-variable">$query</span>);
+
+<span class="hljs-comment">// Invoke the query or data retrieval helper.</span>
+<span class="hljs-variable">$users</span> = <span class="hljs-variable">$db</span>-&gt;loadObjectList();
+</code></pre>
+</div></article>
+			</section>
+		</div>
+	</div>		
+			
+	<!-- Footer -->
+	<footer>
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr/>
+					<div class="well">
+						<h4>License</h4>
+							<p>The contents of the Joomla! Coding Standards Manual are subject to copyright law and are made available under the <a href="http://docs.joomla.org/JEDL"
+        title="Joomla! Electronic Documentation License (JEDL)">Joomla! Electronic Documentation License (JEDL)</a> unless otherwise stated.
+        You may find the <a href="http://docs.joomla.org/JEDL/FAQ" title="JEDL Frequently Asked Questions">JEDL Frequently Asked Questions</a>
+        useful in determining if your proposed use of this material is allowed. If you have any questions regarding licensing of this
+        material please contact <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.
+        If you wish to report a possible violation of the license terms for the material on this site then please contact
+        <a href="mailto:legal@opensourcematters.org" title="Email Open Source Matters">legal@opensourcematters.org</a>.</p>
+					</div>   
+				<p class="pull-left copyright">&copy; Joomla! Coding Standards 2014 Version 1.1</p>
+				<p class="pull-right">
+					This website was last updated at 2014-09-25T15:45:19.370Z
+				</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script defer="defer"  src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/script.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/jquerywidget.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocify.js"></script><script defer="defer"  src="//hutchy68.github.io/coding-std-new/scripts/tocbuild.js"></script>
+</body>
+</html>
