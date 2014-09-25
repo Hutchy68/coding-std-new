@@ -50,7 +50,6 @@ docpadConfig = {
 
 			# Scripts
 			scripts: [
-				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
 				"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
 				"//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
 				"//hutchy68.github.io/coding-std-new/scripts/script.js"

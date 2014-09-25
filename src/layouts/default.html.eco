@@ -44,7 +44,7 @@
 	<div id="main" class="container">
 		<div class="row">
 		<div class="col-md-3">
-			<div id="sidebar" class="hidden-print hidden-xs hidden-sm affix">
+			<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
 			<h3>Table of Contents</h3>
 			<div id="toc" class="tocify"></div>
 			</div>
