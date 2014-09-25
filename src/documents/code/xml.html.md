@@ -5,21 +5,21 @@ tags: ['code']
 pageOrder: 5
 ```
 
-### Attributes
+## Attributes
 
 * Each attribute is on its own line.
 * The four attributes `name`, `type`, `label` and `description` should be written in this order and at the top of the element definition.
 
-### Closing Elements
+## Closing Elements
 
 Elements should be closed with the closing tag on a new line.
 
-### Exception
+## Exception
 
 When the element only has few attributes, then the whole element can stay on the same line.
 A max line length of 100 characters is recommended for good reading.
 
-#### Examples
+### Examples
 
 Element is **empty**:
 ``` xml

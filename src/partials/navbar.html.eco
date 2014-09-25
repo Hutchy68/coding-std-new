@@ -6,10 +6,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 			</button>
-				<div class="manual-image">
+				<div class="manual-image hidden-md hidden-lg">
 				<img src="<%= @site.url %>/images/joomla_coding_standards_manual.png?raw=true" alt="Joomla! Graphic">
 				</div>
-				<a class="navbar-brand hidden-xs hidden-sm" href="<%= @site.url %>">Joomla! Coding Standards</a>
+				<a class="navbar-brand hidden-xs hidden-sm" href="<%= @site.url %>">Joomla! Coding Standards Manual</a>
 				<a class="navbar-brand hidden-md hidden-lg" href="<%= @site.url %>">Coding Standards</a>
 		</div>
 		<div class="navbar-collapse collapse">

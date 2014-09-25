@@ -43,12 +43,9 @@
 	<!-- Content -->
 	<div id="main" class="container">
 		<div class="row">
-		<div class="col-md-3">
-			<div id="sidebar" class="hidden-print hidden-xs hidden-sm">
-			<h3>Table of Contents</h3>
-			<div id="toc" class="tocify"></div>
+			<div class="col-md-3">
+				<%- @partial('sidebar') %>
 			</div>
-        </div>
 		<div class="col-md-9">
 			<section id="content" class="content">
 				<%- @content %>

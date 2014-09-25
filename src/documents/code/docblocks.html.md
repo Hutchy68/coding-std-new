@@ -15,7 +15,7 @@ Code contributed to the Joomla project that will become the copyright of the pro
 
 Files included from third party sources must leave DocBlocks intact. Layout files use the same DocBlocks as other PHP files.
 
-### File DocBlock Headers
+## File DocBlock Headers
 The file header DocBlock consists of the following required and optional elements in the following order:
 Short description (optional unless the file contains more than two classes or functions), followed by a blank line). Long description (optional, followed by a blank line).
 
@@ -42,11 +42,11 @@ Example of a DocBlock Header:
  */
 ```
 
-### Class Definitions
+## Class Definitions
 Class definitions start on a new line and the opening and closing braces are also placed on new lines. Class methods must follow the guidelines for Function Definitions. Properties and methods must follow OOP standards and be declared appropriately (using public, protected, private and static as applicable).
 Class definitions, properties and methods must each be provided with a DocBlock in accordance with the following sections.
 
-#### Class DocBlock Headers
+### Class DocBlock Headers
 The class Docblock consists of the following required and optional elements in the fol-lowing order.
 Short description (required, unless the file contains more than two classes or functions), followed by a blank line). Long description (optional, followed by a blank line).
 * @category (optional and rarely used)
@@ -71,7 +71,7 @@ Example of a Class file DocBlock header:
  */
 ```
 
-#### Class Property DocBlocks 
+### Class Property DocBlocks 
 The class property Docblock consists of the following required and optional elements in the following order.
 Short description (required, followed by a blank line)
 
@@ -93,7 +93,7 @@ Example of Class property DocBlock:
 
 
 
-#### Class Method DocBlocks and Functions DocBlocks
+### Class Method DocBlocks and Functions DocBlocks
 Function definitions start on a new line and the opening and closing braces are also placed on new lines. An empty line should precede lines specifying the return value.
 
 Function definitions must include a documentation comment in accordance with the Commenting section of this document.
