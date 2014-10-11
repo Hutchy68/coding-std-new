@@ -2,7 +2,7 @@
 
 Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 
-Uses Coffeekup instead of Eco and [Twitter Bootstrap 3](http://getbootstrap.com/getting-started/#migration)
+Uses some Coffeekup, html.md and Eco for `partials` plus [Twitter Bootstrap 3](http://getbootstrap.com/getting-started/#migration)
 
 ## Getting Started
 
